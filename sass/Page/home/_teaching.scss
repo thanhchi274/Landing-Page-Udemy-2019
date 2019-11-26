@@ -1,0 +1,82 @@
+.teaching {
+    overflow-y: hidden;
+    @include breakpoint(xs) {
+        padding: 10px 0!important;
+        height: 410px;
+        @include breakpoint(sm) {
+            height: 210px;
+        }
+        background-color: #fff;
+        .teaching__detail {
+            color: white;
+            width: 100%!important;
+            .btn--red {
+                width: 70%;
+                height: 50px;
+                line-height: 35px;
+                border-radius: 0%;
+                border-color: #fff;
+                background-color: transparent;
+                margin-left: 0;
+            }
+            .t_content1 {
+                padding: 10px 0!important;
+                p:first-child {
+                    font-size: 30px!important;
+                    font-weight: 600!important;
+                }
+                p:nth-child(2) {
+                    position: relative;
+                    left: 13%!important;
+                    text-align: center;
+                    @include breakpoint(xss) {
+                        left: 3%!important;
+                    }
+                }
+                background-color: $color-purple;
+            }
+            .t_content2 {
+                padding: 10px 0!important;
+                p:first-child {
+                    font-size: 30px!important;
+                    font-weight: 600!important;
+                }
+                p:nth-child(2) {
+                    position: relative;
+                    left: 13%!important;
+                    text-align: center;
+                    @include breakpoint(xss) {
+                        left: 3%!important;
+                    }
+                }
+                background-color: #003640;
+            }
+            .teaching__line {
+                border-right: none!important;
+            }
+        }
+    }
+    height: 180px;
+    background-color: $color-white-cream;
+    .teaching__detail {
+        width: 85%;
+        .teaching__content {
+            text-align: center;
+            padding-bottom: 10px;
+            p:first-child {
+                font-size: 21px;
+                font-weight: 400;
+            }
+            p:nth-child(2) {
+                width: 300px;
+                position: relative;
+                left: 30%;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        .teaching__line {
+            border-right: 1px solid $color-gray-3;
+        }
+    }
+}

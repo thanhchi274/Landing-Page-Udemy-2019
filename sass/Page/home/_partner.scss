@@ -1,0 +1,30 @@
+.partner {
+    @include breakpoint(xs) {
+        height: auto;
+        background-color: white;
+        p {
+            font-size: 18px!important;
+            font-weight: 600!important;
+        }
+    }
+    width: 100%;
+    height: 150px;
+    background-color: $color-white-cream;
+    p {
+        text-align: center;
+        color: $color-gray-4;
+        font-size: 14px;
+        font-weight: 200;
+        padding-bottom: 10px;
+    }
+    &__detail {
+        @include breakpoint(xs) {
+            display: flex!important;
+            flex-wrap: wrap;
+            .icon {
+                padding: 10px 0;
+            }
+        }
+        text-align: center;
+    }
+}

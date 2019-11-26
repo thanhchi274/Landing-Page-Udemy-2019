@@ -1,0 +1,9 @@
+.btn {
+    &--white {
+        @include button($color-gray-4, $color-white-0, $color-gray-4, $color-black-0, $color-white-0);
+    }
+    &--red {
+        @include button($color-white-0, $color-red-0, none, $color-white-0, #863030);
+        margin-left: 5px;
+    }
+}

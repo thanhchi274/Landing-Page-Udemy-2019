@@ -1,0 +1,68 @@
+.footer {
+    @include breakpoint(xs) {
+        display: none;
+    }
+    width: 78%;
+    &__link {
+        ul {
+            li {
+                padding: 2px 0;
+                margin: 5px 0;
+                font-size: 14px;
+                a {
+                    color: $color-blue;
+                }
+                .highlight {
+                    font-weight: 600;
+                }
+                font-weight:300;
+            }
+            list-style-type: none;
+        }
+    }
+    .footer_xs {
+        @include breakpoint(xs) {
+            display: none;
+        }
+    }
+    .footer__link {
+        .btn-group {
+            @include breakpoint(xs) {
+                display: none;
+            }
+            padding: 10px 0;
+            width: 160px;
+             :focus {
+                box-shadow: none;
+            }
+            .dropdown-toggle {
+                &::after {
+                    margin-left: 55px
+                }
+                span {
+                    margin-left: 10px;
+                }
+                border: 1px solid $color-gray-4;
+                font-size: 12px;
+                border-radius: 2%;
+                color: $color-gray-4;
+                &:hover {
+                    color: $color-black-0;
+                    border-color: $color-black-0;
+                }
+                &:focus {
+                    background-color: $color-white-cream;
+                }
+            }
+            .dropdown-menu {
+                box-shadow: 0px 0px 10px -2px $color-gray-2;
+                ul {
+                    border-color: $color-white-cream;
+                    li {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

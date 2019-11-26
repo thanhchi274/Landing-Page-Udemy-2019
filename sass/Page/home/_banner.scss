@@ -1,0 +1,82 @@
+.banner {
+    @include breakpoint(xs) {
+        height: 270px;
+    }
+    width: 100%;
+    &__topborder {
+        background: linear-gradient(-45deg, #EC5252 0%, #6E1A52 100%);
+        height: 8px;
+        @include breakpoint(xs) {
+            display: none;
+        }
+    }
+    &__content {
+        overflow-y: hidden!important;
+        background-color: $color-black-0;
+        color: $color-white-0;
+        height: 370px;
+        @include breakpoint(xs) {
+            height: 270px!important;
+            background-color: #003640;
+            .btn--red {
+                width: 98%;
+                height: 47px;
+                border-radius: 0%;
+                background-color: #0f7c90;
+            }
+        }
+        .banner__logo__line1 {
+            i {
+                font-size: 25px;
+                @include breakpoint(xs) {
+                    display: none!important;
+                }
+            }
+            @include breakpoint(xs) {
+                padding-top: 0!important;
+                padding-bottom: 20px!important;
+            }
+        }
+        .banner__logo__line2 {
+            @extend .banner__logo__line1;
+            i {
+                text-align: center;
+                margin-top: 25px;
+                @include breakpoint(xs) {
+                    display: none;
+                }
+            }
+            .fa-anchor {
+                transform: translateX(-40%);
+            }
+            .fa-galactic-republic {
+                transform: translateX(20%);
+            }
+            .banner__detail {
+                @include breakpoint(xs) {
+                    p:first-child {
+                        font-size: 30px!important;
+                        font-weight: 700;
+                    }
+                    p:last-child {
+                        font-size: 14px!important;
+                    }
+                }
+                text-align: center;
+                p:first-child {
+                    font-size: 22px;
+                }
+                p:nth-child(2) {
+                    font-size: 16px;
+                    font-weight: 200;
+                }
+            }
+        }
+        .banner__logo__line3 {
+            @extend .banner__logo__line1;
+            @include breakpoint(xs) {
+                display: none;
+            }
+        }
+    }
+}

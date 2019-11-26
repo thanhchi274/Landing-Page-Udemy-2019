@@ -1,0 +1,78 @@
+.categories {
+    transform: translateX(-5%);
+    h1 {
+        font-size: 24px;
+        font-weight: 600;
+        transform: translateX(18%);
+        @include breakpoint(xs) {
+            transform: translateX(8%);
+        }
+    }
+    .categories__content {
+        @include breakpoint(xs) {
+            display: none;
+        }
+        .panel {
+            margin: 0 15px;
+            height: 60px;
+            i {
+                font-size: 30px;
+                margin: 0 5px;
+                padding-top: 16px;
+            }
+            span {
+                font-weight: 200;
+                font-size: 15px;
+            }
+            border: 1px solid $color-gray-3;
+            transition:all .2s;
+        }
+        .panel:hover {
+            box-shadow: 0px 0px 10px -2px $color-gray-2;
+        }
+    }
+    .categories__content_xs {
+        display: none;
+        @include breakpoint(sm) {
+            transform: translateX(20%);
+        }
+        @include breakpoint(xss) {
+            .row {
+                transform: translateX(12%)!important;
+                .panel_xs {
+                    margin: 0!important;
+                    p {
+                        font-size: 14px!important;
+                        padding: 0 2px!important;
+                    }
+                }
+            }
+        }
+        @include breakpoint(xs) {
+            overflow-y: hidden;
+            margin-top: 10px;
+            display: inline-block;
+            width: 100%!important;
+            .row {
+                display: flex!important;
+                flex-wrap: wrap!important;
+                transform: translateX(17%);
+                .panel_xs {
+                    margin: 0 5px;
+                    p {
+                        font-size: 16px!important;
+                        font-weight: 600;
+                        padding: 0 10px;
+                        transform: translateY(30%);
+                    }
+                    border: 1px solid #dcdacb;
+                    color: #0f7c90;
+                    border-radius: 9999px;
+                }
+                margin-right: .8rem;
+                display: inline-block;
+                scroll-snap-align: start;
+            }
+        }
+    }
+}

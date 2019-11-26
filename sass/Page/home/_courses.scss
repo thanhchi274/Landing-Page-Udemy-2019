@@ -1,0 +1,392 @@
+.courses {
+    .courses__xs {
+        display: none!important;
+        @include breakpoint(xs) {
+            display: block!important;
+        }
+        .star-rating {
+            font-size: 13px;
+            .checked {
+                color: $color-yellow;
+            }
+             :last-child {
+                font-size: 11px;
+                font-weight: 200;
+            }
+        }
+        .card {
+            width: 95%;
+            margin: 0 auto;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            .card-header {
+                background-color: #fff;
+                position: relative;
+                .btn-link-courses {
+                    padding-left: 0;
+                    font-size: 18px;
+                    font-weight: 700;
+                    span {
+                        position: absolute;
+                        left: 90%;
+                        bottom: 27%;
+                    }
+                }
+                 :focus {
+                    span {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint(xs) {
+        .courses__category {
+            display: none;
+        }
+        width: 100%!important;
+        z-index: 0!important;
+    }
+    overflow-y: hidden;
+    width: 80%;
+    color: $color-black-0;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 20px;
+    .course_item1 {
+        width: 100%!important;
+        border-bottom: 1px solid $color-black-light;
+    }
+    .courses__intro {
+        @include breakpoint(xs) {
+            display: none;
+        }
+        width: 115%;
+        height: 390px;
+        transform: translateX(-13.5%);
+        background-color: $color-gray-5;
+        padding-left: 30px;
+        p:first-child {
+            font-weight: 600;
+            @include breakpoint(xs) {
+                display: none;
+            }
+        }
+        p {
+            font-size: 18px;
+            text-align: left;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .nav {
+        @include breakpoint(xs) {
+            width: 100%!important;
+            display: block;
+            .nav-item {
+                position: relative;
+                .nav-link-icon {
+                    transform: rotate(0deg)!important;
+                    position: absolute;
+                    top: 40%;
+                    left: 90%;
+                }
+                margin: 0 20px;
+                border-top: 1px solid $color-white-cream;
+                border-bottom: 1px solid $color-white-cream;
+                .nav-link {
+                    border-left: none;
+                    border-right: none;
+                    font-size: 19px;
+                    color: rgba(20, 23, 28, .85)!important;
+                    font-weight: 700;
+                }
+            }
+        }
+        .nav-tabs {
+            margin-left: 17px;
+            width: 101.5%;
+            margin-bottom: 20px;
+            .nav-item {
+                .nav-link-icon {
+                    display: none;
+                }
+                .nav-link {
+                    text-align: center;
+                    color: $color-black-0;
+                    border-color: transparent;
+                    border-bottom-color: #dee2e6;
+                    position: relative;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                        width: 0%;
+                        height: 4px;
+                        background-color: $color-blue;
+                    }
+                    &.active::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .owl-nav {
+        @include breakpoint(xs) {
+            display: none;
+        }
+        .owl-prev {
+            width: 40px;
+            height: 40px;
+            background-color: white!important;
+            box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+            span {
+                line-height: 40px;
+                font-size: 30px;
+                color: $color-blue;
+            }
+            position: absolute;
+            top: 30%;
+            right: 97%;
+            border-radius: 50%;
+            z-index: 3;
+            &::before {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+        }
+        .owl-next {
+            @extend .owl-prev;
+            right: 0%;
+            left: 97%;
+        }
+    }
+}
+
+.tab-content {
+    width: 105%;
+    .card {
+        .card-body {
+            height: 205px;
+        }
+        .star-rating {
+            font-size: 13px;
+            .checked {
+                color: $color-yellow;
+            }
+             :last-child {
+                font-size: 11px;
+                font-weight: 200;
+            }
+        }
+        .price {
+            padding-top: 10px;
+            position: relative;
+            left: 110px;
+            font-size: 18px;
+        }
+        .card-body {
+            p:first-child {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .card-text {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.prosCourses {
+    .prosCourses__title_xs {
+        display: none;
+    }
+    .row {
+        flex-wrap: nowrap;
+        @include breakpoint(xs) {
+            display: block!important;
+        }
+    }
+    @include breakpoint(xs) {
+        .prosCourses__title_xs {
+            padding: 15px 0;
+            text-align: center;
+            display: block;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        background-color: white;
+        border: 1px solid $color-gray-2;
+        margin: 0 25px;
+    }
+    background-color: $color-white-cream;
+    height: 260px;
+    @include breakpoint(xs) {
+        height: 500px;
+    }
+    @include breakpoint(sm) {
+        height: 380px;
+    }
+    @include breakpoint(xss) {
+        height: 647px;
+    }
+    &__item {
+        @include breakpoint(xs) {
+            width: 100%!important;
+            transform: translateY(0%);
+            margin: 0px;
+            padding: 0!important;
+            border: none;
+        }
+        img {
+            @include breakpoint(xs) {
+                margin: 0 20px!important;
+            }
+        }
+        width: 160px;
+        margin: 0 10px;
+        background-color: $color-white-0;
+        transform: translateY(20%);
+        border: 1px solid $color-white-cream;
+        p:first-child {
+            font-size: 20px;
+            font-weight: 600;
+            @include breakpoint(xs) {
+                margin-bottom: 10px!important;
+            }
+        }
+        p {
+            @include breakpoint(xs) {
+                font-size: 14px;
+            }
+            font-size: 16px;
+            font-weight: 300;
+            color: $color-gray-4;
+        }
+    }
+}
+
+.anotherCourses {
+    @include breakpoint(xs) {
+        z-index: 0!important;
+        h1 {
+            margin-top: 40px;
+            font-size: 24px!important;
+            font-weight: 600!important;
+        }
+    }
+    width: 88%;
+    color: $color-black-0;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 25px;
+    h1 {
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 5px;
+    }
+    .carousel2 {
+        @include breakpoint(xs) {
+            display: none!important;
+        }
+        .card {
+            .card-body {
+                height: 205px;
+            }
+            .star-rating {
+                font-size: 13px;
+                .checked {
+                    color: $color-yellow;
+                }
+                 :last-child {
+                    font-size: 11px;
+                    font-weight: 200;
+                }
+            }
+            .price {
+                padding-top: 20px;
+                position: relative;
+                left: 120px;
+                font-size: 18px;
+            }
+            .card-body {
+                p:first-child {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .card-text {
+                    font-size: 12px;
+                }
+            }
+        }
+        .owl-nav {
+            @include breakpoint(xs) {
+                display: none;
+            }
+            .owl-prev {
+                width: 40px;
+                height: 40px;
+                background-color: white!important;
+                box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+                span {
+                    line-height: 40px;
+                    font-size: 30px;
+                    color: $color-blue;
+                }
+                position: absolute;
+                top: 32%;
+                right: 98%;
+                border-radius: 50%;
+                z-index: 3;
+                &::before {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+            .owl-next {
+                @extend .owl-prev;
+                right: 0%;
+                left: 98%;
+            }
+        }
+    }
+    .carousel2_xs {
+        display: none;
+        @extend .carousel2;
+        @include breakpoint(xs) {
+            display: block!important;
+            .card {
+                height: 100px;
+                display: flex!important;
+                flex-direction: row;
+                margin-bottom: 10px;
+                border: none;
+                .card-img-top {
+                    padding-bottom: 140px!important;
+                }
+                .card-body {
+                    padding: 0!important;
+                }
+                .card-title {
+                    font-size: 14px!important;
+                    margin-bottom: 0;
+                }
+                .card-text {
+                    margin-bottom: 0;
+                }
+                .price {
+                    padding-top: 0;
+                    left: 0;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

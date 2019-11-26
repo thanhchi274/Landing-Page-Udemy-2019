@@ -1,0 +1,121 @@
+    .review {
+        @include breakpoint(xs) {
+            z-index: 0!important;
+            overflow-y: hidden;
+            h1 {
+                transform: translateX(0%)!important;
+            }
+            background-color: #fff;
+            height: 280px;
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            transform: translateX(12%);
+            padding-bottom: 10px;
+        }
+        background-color: $color-white-cream;
+        .carousel3 {
+            @include breakpoint(xs) {
+                z-index: 0!important;
+                display: none;
+            }
+            position: relative;
+            width: 78%;
+            .row {
+                flex-wrap: nowrap;
+            }
+            .item {
+                height: 250px;
+                .block {
+                    box-shadow: 0px 0px 5px -2px $color-gray-3;
+                    margin-left: 10px;
+                    width: 320px;
+                    background-color: $color-white-0;
+                    border: 1px solid $color-white-cream;
+                    .review__title {
+                        .review__noimage {
+                            color: white;
+                            width: 60px;
+                            height: 60px;
+                            line-height: 60px;
+                            background-color: $color-gray-4;
+                            border-radius: 50%;
+                            p {
+                                transform: translateX(40%);
+                            }
+                        }
+                        padding: 10px 5px;
+                        img {
+                            width: 60px!important;
+                            height: 60px;
+                            border-radius: 50%;
+                        }
+                        span {
+                            line-height: 60px;
+                            margin-left: 20px;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                    .review__detail {
+                        width: 330px;
+                        font-size: 17px;
+                        font-weight: 300;
+                        text-align: left;
+                    }
+                }
+            }
+            .owl-nav {
+                @include breakpoint(xs) {
+                    display: none;
+                    overflow-x: visible;
+                }
+                .owl-prev {
+                    width: 40px;
+                    height: 40px;
+                    background-color: white!important;
+                    box-shadow: 0 0 1px 1px rgba(20, 23, 28, .1), 0 3px 1px 0 rgba(20, 23, 28, .1);
+                    span {
+                        line-height: 40px;
+                        font-size: 30px;
+                        color: $color-blue;
+                    }
+                    position: absolute;
+                    top: 44%;
+                    right: 98.5%;
+                    border-radius: 50%;
+                    z-index: 3;
+                    &::before {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                    }
+                }
+                .owl-next {
+                    @extend .owl-prev;
+                    right: 0%;
+                    left: 98%;
+                }
+            }
+        }
+        .carousel_xs {
+            @extend .carousel3;
+            display: none;
+            @include breakpoint(xs) {
+                padding-right: 10px;
+                width: 100%!important;
+                overflow-x: scroll;
+                display: block;
+                .review__detail {
+                    font-size: 18px;
+                    width: 250px;
+                    font-weight: 300;
+                }
+                .review__title {
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }

@@ -1,0 +1,45 @@
+@mixin button($color, $bg-color, $border-color, $color-hover, $bg-color-hover) {
+    color: $color;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+    &:hover {
+        color: $color-hover;
+        background-color: $bg-color-hover;
+    }
+}
+
+
+/* Mixin */
+
+@mixin breakpoint($class) {
+    @if $class==xs {
+        @media (max-width: 768px) {
+            @content;
+            overflow-x: hidden;
+        }
+    }
+    @else if $class==xss {
+        @media (max-width: 321px) {
+            @content;
+            overflow-x: hidden;
+        }
+    }
+    @else if $class==sm {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+    @else if $class==md {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+    @else if $class==lg {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else {
+        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}

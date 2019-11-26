@@ -1,0 +1,2622 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<!-- BEM: 
+B là block(navbar)
+E ELement những thằng con của block .block__element
+M modify .block--modify( btn btn--green) -->
+
+<body>
+    <div class="header__xs">
+        <div id="mySidenav" class="sidenav">
+            <div href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</div>
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+            <div class="header__line"></div>
+            <div class="mostpopular">
+                <p class="header__title">Most popular</p>
+                <ul>
+                    <li>Web Development <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>Mobile Apps <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>Game Development <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>Fiance <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>Enterpreneurship <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>Data & Analytics <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>Digital Marketing <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>Graphic Design <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>IT Certification <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>People Transform <span><i class="fa fa-angle-right"></i></span></li>
+                    <li>All Categories <span><i class="fa fa-angle-right"></i></span></li>
+                </ul>
+            </div>
+            <div class="header__line"></div>
+            <div class="moreformudemy">
+                <p class="header__title">More form Udemy</p>
+                <ul>
+                    <li>Udemy for Business</li>
+                    <li>Get the app</li>
+                    <li>Invite Friends</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <span onclick="openNav()">☰</span>
+            <i class="fa fa-search"></i>
+            <img class="logo" src="./img/logo-coral.svg" alt="">
+            <i class="fa fa-shopping-cart"></i>
+        </div>
+    </div>
+    <header class="header container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="col-lg-7 col-sm-0">
+                <div class="header__left">
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img class="img-fluid" src="./img/logo-coral.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="categories">
+                        <i class="fa fa-th"></i>
+                        <span>Categories</span>
+                    </div>
+                    <div class="search">
+                        <div class="input-group ">
+                            <input type="text" class="form-control" placeholder="Search for everything">
+                            <div class="input-group-prepend ">
+                                <span class="input-group-text"><i class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav header__right mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Udemy for business <span class="sr-only">(current)</span></a>
+                            <div class="nav-item__detail nav-item">
+                                Get your team access to 3,500+ top Udemy courses anytime, anywhere
+                                <div class="nav-item__link nav-item">
+                                    <a href="#">Try Udemy for Business</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Teach on Udemy</a>
+                            <div class="nav-item__detail">
+                                Turn what you know into an opportunity and reach millions around the world.
+                                <div class="nav-item__link">
+                                    <a href="#">Learn more</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"></li>
+                    </ul>
+                    <div class="line"></div>
+                    <div class="header__icon">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <form class="form-inline my-2 my-lg-0 container">
+                        <button class="btn btn--white my-2 my-sm-0 " type="submit">Log In</button>
+                        <button class="btn btn--red my-2 my-sm-0" type="submit">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </nav>
+    </header>
+    <section class="cover">
+        <div class="cover__xs">
+            <div class="cover__xs__img ">
+                <img src="./img/cover.jpg" class="img-fluid" alt="">
+            </div>
+            <h1>Learn on your schedule</h1>
+            <p>Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
+            <div class="input--group d-flex">
+                <input type="text" class="form-control" placeholder="What do you want to learn ?">
+                <div class="input-group-prepend ">
+                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="cover__detail img-fluid">
+            <h1>Learn on your schedule</h1>
+            <p>Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
+            <div class="input--group d-flex">
+                <input type="text" class="form-control" placeholder="What do you want to learn ?">
+                <div class="input-group-prepend ">
+                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advertise">
+        <div class="row advertise__detail container-fluid ml-auto mr-auto">
+            <div class="col-lg-4 d-flex ">
+                <div class="icon"><i class="fa fa-bullseye"></i></div>
+                <div class="advertise__content">
+                    <h6>100,000 online courses</h6>
+                    <p>Explore a variety of fresh topics</p>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex">
+                <div class="icon "><i class="fa fa-inbox"></i></div>
+                <div class="advertise__content">
+                    <h6>Expert instruction</h6>
+                    <p>Find the right instructor for you</p>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex">
+                <div class="icon "><i class="fa fa-bullseye"></i></div>
+                <div class="advertise__content">
+                    <h6>Lifetime access</h6>
+                    <p>Learn on your schedule</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="courses ">
+        <div class="courses__xs">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link-courses collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Bussiness
+                                    <span><i class="fa fa-angle-down"></i></span>
+                                </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link-courses collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Design
+                                    <span><i class="fa fa-angle-down"></i></span>
+                              </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link-courses collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Photography
+                              <span><i class="fa fa-angle-down"></i></span>
+                              </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFourth">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link-courses collapsed" type="button" data-toggle="collapse" data-target="#collapseFourth" aria-expanded="true" aria-controls="collapseFourth">
+                                        Development
+                                        <span><i class="fa fa-angle-down"></i></span>
+                                  </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseFourth" class="collapse show" aria-labelledby="headingFourth" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFitfh">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link-courses collapsed" type="button" data-toggle="collapse" data-target="#collapseFifth" aria-expanded="false" aria-controls="collapseFifth">
+                                        Marketing
+                                        <span><i class="fa fa-angle-down"></i></span>
+                                  </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFifth" class="collapse" aria-labelledby="headingFitfh" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link-courses collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  IT & Software
+                                  <span><i class="fa fa-angle-down"></i></span>
+                                  </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link-courses collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                  Personal Development
+                                      <span><i class="fa fa-angle-down"></i></span>
+                                      </button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="courses__intro">
+                    <p>The world’s largest selection of courses</p>
+                    <p>
+                        Choose from over 100,000 online video courses with new additions published every month
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-8 ">
+                <div class="courses__category">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home">Bussiness</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu1">Design</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu2">Photography</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu3">Development</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu4">Marketing</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu5">IT & Software</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#menu6">Personal Development</a>
+
+                        </li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="home">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu1">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </h4>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu2">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu3">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu4">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu5">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container fade" id="menu6">
+                            <div class="owl-carousel owl-theme">
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh1.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh2.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh3.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh4.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                                <div class="card course__item">
+                                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            The Complete Presentation & Public Speaking
+                                        </p>
+                                        <p class="card-text">Chris Haroun</p>
+                                        <div class="star-rating ">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span> 4.6 </span>
+                                            <span> (43.682)</span>
+                                        </div>
+                                        <p class="price">$199.99</p>
+                                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="prosCourses ">
+        <div class="row ml-auto mr-auto container justify-content-around ">
+            <p class="prosCourses__title_xs">Why learn on Udemy?</p>
+            <div class="prosCourses__item col-lg-4 d-flex py-4">
+                <img alt="Go at your own pace" data-purpose="unit-icon" width="42" height="42" class="mx-2" src="https://i.udemycdn.com/browse_components/value-props-unit/go_own_pace.svg">
+                <div class="prosCourses__detail">
+                    <p>Go at your own pace</p>
+                    <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+                </div>
+            </div>
+            <div class="prosCourses__item col-lg-4 d-flex py-4">
+                <img alt="Learn from industry experts" data-purpose="unit-icon" width="40" height="43" class="mx-2" src="https://i.udemycdn.com/browse_components/value-props-unit/learn_from_experts.svg">
+                <div class="prosCourses__detail">
+                    <p>Learn from industry experts</p>
+                    <p>Select from top instructors around the world</p>
+                </div>
+            </div>
+            <div class="prosCourses__item col-lg-4 d-flex py-4">
+                <img alt="Find video courses on almost any topic" data-purpose="unit-icon" width="44" height="44" class="mx-2" src="https://i.udemycdn.com/browse_components/value-props-unit/video_courses.svg">
+                <div class="prosCourses__detail">
+                    <p>Find video courses on almost any topic</p>
+                    <p>Build your library for your career and personal growth</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="anotherCourses ">
+        <h1>Student are viewing</h1>
+        <div class="owl-carousel carousel2_xs">
+            <div class="item ">
+                <div class="card course__item row ">
+                    <img class="card-img-top img-fluid col-3" src="./img/kh8.jpg" alt="Card image">
+                    <div class="card-body col-9">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+
+                <div class="card course__item row ">
+                    <img class="card-img-top img-fluid col-3" src="./img/kh9.jpg" alt="Card image">
+                    <div class="card-body col-9">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+                <div class="card course__item row">
+                    <img class="card-img-top img-fluid col-3" src="./img/kh10.jpg" alt="Card image">
+                    <div class="card-body col-9">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item row ">
+                    <img class="card-img-top img-fluid col-3" src="./img/kh11.jpg" alt="Card image">
+                    <div class="card-body col-9">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+                <div class="card course__item row">
+                    <img class="card-img-top img-fluid col-3" src="./img/kh12.jpg" alt="Card image">
+                    <div class="card-body col-9">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+                <div class="card course__item row">
+                    <img class="card-img-top img-fluid col-3" src="./img/kh5.jpg" alt="Card image">
+                    <div class="card-body col-9">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item row">
+                    <img class="card-img-top img-fluid col-3" src="./img/kh10.jpg" alt="Card image">
+                    <div class="card-body col-9">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+                <div class="card course__item row">
+                    <img class="card-img-top img-fluid col-3" src="./img/kh10.jpg" alt="Card image">
+                    <div class="card-body col-9">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+                <div class="card course__item row">
+                    <img class="card-img-top img-fluid col-3" src="./img/kh10.jpg" alt="Card image">
+                    <div class="card-body col-9">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel carousel2 owl-theme container-fuild justify-content-between">
+            <div class="item">
+                <div class="card course__item">
+                    <img class="card-img-top" src="./img/kh8.jpg" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item">
+                    <img class="card-img-top" src="./img/kh9.jpg" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item">
+                    <img class="card-img-top" src="./img/kh10.jpg" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item">
+                    <img class="card-img-top" src="./img/kh11.jpg" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item">
+                    <img class="card-img-top" src="./img/kh12.jpg" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item">
+                    <img class="card-img-top" src="./img/kh5.jpg" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item">
+                    <img class="card-img-top" src="./img/kh10.jpg" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item">
+                    <img class="card-img-top" src="./img/kh10.jpg" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card course__item">
+                    <img class="card-img-top" src="./img/kh10.jpg" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-title">
+                            The Complete Presentation & Public Speaking
+                        </p>
+                        <p class="card-text">Chris Haroun</p>
+                        <div class="star-rating ">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span> 4.6 </span>
+                            <span> (43.682)</span>
+                        </div>
+                        <p class="price">$199.99</p>
+                        <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="banner__topborder">
+        </div>
+        <div class="banner__content">
+            <div class="banner__logo__line1 d-flex justify-content-around py-5">
+                <i class="fa fa-play"></i>
+                <i class="fa fa-file-contract"></i>
+                <i class="fa fa-balance-scale"></i>
+                <i class="fa fa-broadcast-tower"></i>
+                <i class="fab fa-amilia"></i>
+            </div>
+            <div class="banner__logo__line2 row d-flex justify-content-around container ml-auto mr-auto">
+                <i class="fa fa-anchor col-lg-3 "></i>
+                <div class="banner__detail col-lg-6">
+                    <p>Get personalized recommendations</p>
+                    <p>Answer a few questions for your top picks</p>
+                    <button class="btn btn--red">Get Started</button>
+                </div>
+                <i class="fab fa-galactic-republic col-lg-3"></i>
+            </div>
+            <div class="banner__logo__line3 d-flex justify-content-around py-5">
+                <i class="fa fa-play"></i>
+                <i class="fa fa-file-contract"></i>
+                <i class="fa fa-balance-scale"></i>
+                <i class="fa fa-broadcast-tower"></i>
+                <i class="fab fa-amilia"></i>
+            </div>
+        </div>
+    </section>
+    <section class="categories container-fuild py-4">
+        <h1>
+            Top categories
+        </h1>
+        <div class="categories__content_xs">
+            <div class="row">
+                <div class="col-xs-6 panel_xs">
+                    <p>Personal Development</p>
+                </div>
+                <div class="col-xs-6 panel_xs">
+                    <p>Development</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 panel_xs">
+                    <p>Business</p>
+                </div>
+                <div class="col-xs-4 panel_xs">
+                    <p>Photography</p>
+                </div>
+                <div class="col-xs-4 panel_xs">
+                    <p>Design</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4 panel_xs">
+                    <p>IT & Software</p>
+                </div>
+                <div class="col-xs-4 panel_xs">
+                    <p>Marketing</p>
+                </div>
+                <div class="col-xs-4 panel_xs">
+                    <p>Music</p>
+                </div>
+            </div>
+        </div>
+        <div class="row categories__content ml-auto mr-auto">
+            <div class="categories__line1 container d-flex jutify-content-around py-2">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 panel">
+                    <i class="fa fa-code"></i>
+                    <span>Development</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 panel">
+                    <i class="fa fa-chart-bar"></i>
+                    <span>Business</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 panel">
+                    <i class="fa fa-desktop"></i>
+                    <span>IT & Software</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 panel">
+                    <i class="fa fa-pencil-ruler"></i>
+                    <span>Design</span>
+                </div>
+            </div>
+            <div class="categories__line2 container d-flex jutify-content-around">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 panel">
+                    <i class="fa fa-chart-bar"></i>
+                    <span>Marketing</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 panel">
+                    <i class="fa fa-user-graduate"></i>
+                    <span>Personal Development</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 panel">
+                    <i class="fa fa-camera"></i>
+                    <span>Photography</span>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 panel">
+                    <i class="fa fa-music"></i>
+                    <span>Music</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="review container-fluid py-4">
+        <h1>What our students have to say
+        </h1>
+        <div class="review__content">
+            <div class="owl-carousel owl-theme carousel_xs">
+                <div class="item">
+                    <div class="review__detail ">
+                        <p>Udemy is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to Udemy, I'm really close.</p>
+                    </div>
+                    <div class="review__title d-flex">
+                        <span>Borivoje</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="review__detail ">
+                        <p>I believe in lifelong learning and Udemy is a great place to learn from experts. I've learned a lot and recommend it to all my friends..</p>
+                    </div>
+                    <div class="review__title d-flex">
+                        <span>Dipesh</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="review__detail ">
+                        <p>My children and I LOVE Udemy! The courses are fantastic and the instructors are so fun and knowledgeable. I only wish we found it sooner.</p>
+                    </div>
+                    <div class="review__title d-flex">
+                        <span>Kathy</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="review__detail">
+                        <p>I work in project management and joined Udemy because I get great courses for less. The instructors are fantastic, interesting, and helpful. I plan to use Udemy for a long time!</p>
+                    </div>
+                    <div class="review__title d-flex">
+                        <span>Zulaika</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="review__detail">
+                        <p>Thank you Udemy! You've renewed my passion for learning and my dream of becoming a web developer.</p>
+                    </div>
+                    <div class="review__title d-flex">
+                        <span>Marco</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="review__detail d-flex">
+                        <p>The best part about Udemy is the selection. You can find a course for anything you want to learn!</p>
+                    </div>
+                    <div class="review__title d-flex">
+                        <span>Justin</span>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel carousel3 owl-theme mx-auto ">
+                <div class="item row mx-auto d-flex justify-content-around ">
+                    <div class="col-sm-6 col-md-4 col-lg-4 block py-4 px-4 ">
+                        <div class="review__title d-flex">
+                            <img src="./img/avatar1.jpg" alt="">
+                            <span>Borivoje</span>
+                        </div>
+                        <div class="review__detail ">
+                            <p>Udemy is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to Udemy, I'm really close.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 block py-4 px-4 ">
+                        <div class="review__title d-flex">
+                            <img src="./img/avatar2.jpg" alt="">
+                            <span>Dipesh</span>
+                        </div>
+                        <div class="review__detail ">
+                            <p>I believe in lifelong learning and Udemy is a great place to learn from experts. I've learned a lot and recommend it to all my friends..</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 block py-4 px-4">
+                        <div class="review__title d-flex">
+                            <div class="review__noimage ">
+                                <p>K</p>
+                            </div>
+                            <span>Kathy</span>
+                        </div>
+                        <div class="review__detail ">
+                            <p>My children and I LOVE Udemy! The courses are fantastic and the instructors are so fun and knowledgeable. I only wish we found it sooner.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item row ml-auto mr-auto d-flex justify-content-around">
+                    <div class="col-sm-6 col-md-4 col-lg-4 block py-4 px-4">
+                        <div class="review__title d-flex">
+                            <img src="./img/avatar3.jpg" alt="">
+                            <span>Zulaika</span>
+                        </div>
+                        <div class="review__detail">
+                            <p>I work in project management and joined Udemy because I get great courses for less. The instructors are fantastic, interesting, and helpful. I plan to use Udemy for a long time!</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 block py-4 px-4">
+                        <div class="review__title d-flex">
+                            <img src="./img/avatar4.jpg" alt="">
+                            <span>Marco</span>
+                        </div>
+                        <div class="review__detail">
+                            <p>Thank you Udemy! You've renewed my passion for learning and my dream of becoming a web developer.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-4 block py-4 px-4">
+                        <div class="review__title d-flex">
+                            <div class="review__noimage">
+                                <p>J</p>
+                            </div>
+                            <span>Justin</span>
+                        </div>
+                        <div class="review__detail d-flex">
+                            <p>The best part about Udemy is the selection. You can find a course for anything you want to learn!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="partner container-fluid py-2">
+        <p>Trusted by companies of all sizes</p>
+        <div class="partner__detail container d-flex justify-content-around">
+            <div class="icon">
+                <img src="./img/booking.svg" alt="">
+            </div>
+            <div class="icon">
+                <img src="./img/volkswagen.svg" alt="">
+            </div>
+            <div class="icon">
+                <img src="./img/mercedes.svg" alt="">
+            </div>
+            <div class="icon">
+                <img src="./img/pinterest.svg" alt="">
+            </div>
+            <div class="icon">
+                <img src="./img/adidas.svg" alt="">
+            </div>
+            <div class="icon">
+                <img src="./img/paypal.svg" alt="">
+            </div>
+
+        </div>
+    </section>
+    <section class="teaching container-fluid">
+        <div class="row teaching__detail mx-auto ">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 teaching__content teaching__line t_content1">
+                <p>Teach on Udemy</p>
+                <p>Teach what you love. Udemy gives you the tools to create an online course.</p>
+                <div class="btn btn--red">Start teaching</div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 teaching__content t_content2">
+                <p>Udemy for Business</p>
+                <p>Get unlimited access to 3,500+ of Udemy’s top courses for your team.</p>
+                <div class="btn btn--red">Get Udemy for Business</div>
+            </div>
+        </div>
+    </section>
+    <section class="footer container-fluid mx-auto py-4">
+        <div class="footer__link row ">
+            <div class="col-lg-9 row ">
+                <div class="col-lg-4 footer_xs">
+                    <ul>
+                        <li>
+                            <a class="highlight" href="https://business.udemy.com/?mx_pg=home-page&amp;locale=en_US&amp">Udemy for Business</a>
+                        </li>
+                        <li>
+                            <a class="highlight" href="https://www.udemy.com/teaching/?ref=teach_footer">Teach on Udemy</a>
+                        </li>
+                        <li>
+                            <a href="https://www.udemy.com/mobile/">Udemy app</a>
+                        </li>
+                        <li>
+                            <a href="https://about.udemy.com/?locale=en-us">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 footer_xs">
+                    <ul>
+                        <li>
+                            <a href="https://about.udemy.com/careers?locale=en-us">Careers</a>
+                        </li>
+                        <li>
+                            <a href="https://about.udemy.com/blog?ref=footer">Blog</a>
+                        </li>
+                        <li>
+                            <a href="https://www.udemy.com/support/">Support</a>
+                        </li>
+                        <li>
+                            <a href="https://www.udemy.com/affiliate/">Affiliate</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 footer_xs">
+                    <ul>
+                        <li>
+                            <a href="https://www.udemy.com/sitemap/">Sitemap</a>
+                        </li>
+                        <li>
+                            <a href="https://www.udemy.com/popular-courses/">Featured Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 py-3">
+                <div class="btn-group dropup py-2">
+                    <button type="button" class="btn dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-globe-americas"></i>
+                                <span>English</span>
+                            </button>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li>English</li>
+                            <li>Deutsch</li>
+                            <li>Español</li>
+                            <li>Français</li>
+                            <li>Bahasa Indonesia</li>
+                            <li>Italiano</li>
+                            <li>日本語</li>
+                            <li>한국어</li>
+                            <li>Nederlands</li>
+                            <li>Polski</li>
+                            <li>Português</li>
+                            <li>Română</li>
+                            <li>Русский</li>
+                            <li>ภาษาไทย</li>
+                            <li>Türkçe</li>
+                            <li>中文(简体)</li>
+                            <li>中文(繁體)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="term py-2">
+        <div class="term__line container-fluid ">
+        </div>
+        <div class="term_xs_language">
+            <div class="btn-group dropup py-2">
+                <button type="button" class="btn dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-globe-americas"></i>
+                                    <span>English</span>
+                                </button>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>English</li>
+                        <li>Deutsch</li>
+                        <li>Español</li>
+                        <li>Français</li>
+                        <li>Bahasa Indonesia</li>
+                        <li>Italiano</li>
+                        <li>日本語</li>
+                        <li>한국어</li>
+                        <li>Nederlands</li>
+                        <li>Polski</li>
+                        <li>Português</li>
+                        <li>Română</li>
+                        <li>Русский</li>
+                        <li>ภาษาไทย</li>
+                        <li>Türkçe</li>
+                        <li>中文(简体)</li>
+                        <li>中文(繁體)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="term__detail ">
+            <li>
+                <a href="https://www.udemy.com/terms/">Terms</a>
+            </li>
+            <li>
+                <a href="https://www.udemy.com/terms/privacy/">Privacy Policy and Cookie Policy</a>
+            </li>
+            <li>
+                <a href="https://www.udemy.com/sitemap/">Sitemap</a>
+            </li>
+            <li>
+                <a href="https://www.udemy.com/popular-courses/">Featured Courses</a>
+            </li>
+            <li>
+                <a href="#">Get the app</a>
+            </li>
+        </div>
+        <div class="term__content py-5 d-flex justify-content-between mx-auto">
+
+            <div class="col-lg-5 col-sm-3 term__item1">
+                <img src="./img/logo-coral.svg" alt="">
+                <span>Copyright © 2019 Udemy, Inc.</span>
+            </div>
+            <div class="col-lg-4 col-sm-2 term__item2 ">
+                <a href="https://www.udemy.com/terms/">Terms</a>
+                <a href="https://www.udemy.com/terms/privacy/">Privacy Policy and Cookie Policy</a>
+            </div>
+        </div>
+        <div class="term__line2  container-fluid">
+        </div>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
